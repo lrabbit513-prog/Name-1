@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สูตรคูณแม่ 2-12</title>
+</head>
+<body>
+
+<h2>สูตรคูณแม่ 2 ถึงแม่ 12</h2>
+<pre id="output"></pre>
+
+<script>
+    let output = "";
+
+    let dan = 2; // เริ่ม
+
+    while (dan <= 12) {
+        let i = 1;
+        output += "แม่ " + dan + "\n";
+
+        while (i <= 12) {
+            output += i + " x " + dan + " = " + (i * dan) + "\n";
+            i++;
+        }
+
+        output += "\n";
+        dan++;
+    }
+
+    document.getElementById("output").textContent = output;
+</script>
+
+</body>
+</html>
